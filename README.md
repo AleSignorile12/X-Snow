@@ -2,19 +2,36 @@
 
 # X-Snow: Snow for the Mac Desktop
 
-**Snow on your Mac.** X-Snow is a little menu bar app that makes it snow over your desktop. The snow settles on the tops of your windows, on widgets and along the bottom of the screen, and stops at the ends of the Dock. You can put out Christmas trees and snowmen, hang strings of lights, send a snow plow along a window, and every so often Santa flies across.
+**Snow on your Mac.** X-Snow is a little menu bar app that makes it snow over your desktop. The snow settles on the tops of your windows, on widgets and along the bottom of the screen, where it tucks in behind the Dock. You can put out Christmas trees and snowmen, hang strings of lights, send a snow plow along a window, and every so often Santa flies across.
 
 <p align="center">
-  <img src=".github/screenshots/1-santa.png" width="90%" alt="The whole screen: snow falling, lights along the top, a tree, a gift and a snowman, and Santa's sleigh">
-</p>
-<p align="center">
-  <img src=".github/screenshots/2-lights.png" width="90%" alt="Close-up: strings of lights and snow piled on the top edges of windows">
-</p>
-<p align="center">
-  <img src=".github/screenshots/3-tree.png" width="60%" alt="Close-up: a Christmas tree, a gift and a snowman standing on the bottom of the screen">
+  <img src=".github/screenshots/1-desktop.png" width="100%" alt="A whole desktop with X-Snow running: snow falling and lying on windows and widgets, strings of lights along the top of the screen, a cable car on a rope from the notch, Christmas trees, gifts and snowmen, Santa's sleigh crossing, and the plow parked by the snowflake in the menu bar">
 </p>
 
-<sub>Screenshots come from the app's own debug snapshot, which draws grey boxes where the real windows are.</sub>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src=".github/screenshots/2-lights.png" width="100%" alt="Strings of lights draped along the top of the screen, a cable car riding a rope from the notch down to a window, and a tree, a gift and a snowman standing in the snow on that window">
+      <br><sub><b>Lights and the cable car.</b> Strings hang from the sides of the screen and drape along the top. The rope hangs from the notch and hooks onto a window.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <img src=".github/screenshots/3-windows.png" width="100%" alt="Snow and fairy lights along the top edges of two windows, the snow plow scraping one of them clean, and a tree and a gift on the other">
+      <br><sub><b>Snow on windows.</b> It settles along every top edge, with fairy lights under it. The plow scrapes a window clean and throws the snow off.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src=".github/screenshots/4-santa.png" width="100%" alt="Santa's sleigh pulled by four reindeer, Rudolph in front, leaving a trail of golden sparkles">
+      <br><sub><b>Santa.</b> Every so often his sleigh crosses the screen, with Rudolph in front.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <img src=".github/screenshots/5-dock.png" width="100%" alt="A Christmas tree and a gift standing in the snow along the bottom of the screen, next to the Dock, with the snow showing through the Dock's glass">
+      <br><sub><b>The bottom of the screen.</b> Snow piles up along the bottom and lies behind the Dock, showing through its glass.</sub>
+    </td>
+  </tr>
+</table>
+
+<sub>X-Snow itself drew the snow, decorations, lights, plow and Santa, and its debug snapshot saved them. The wallpaper, windows, widgets, Dock and menu bar behind them are a staged desktop: X-Snow never asks for Screen Recording, so it can't capture the real screen.</sub>
 
 - **Platforms:** macOS 14.0+
 - **Language:** Swift with AppKit and SpriteKit. No third-party dependencies, no image files: every picture is drawn in code.
@@ -145,7 +162,7 @@ Debug builds can save a picture of the overlay: launch with `-snapshot <file.png
 
 **Verified**
 
-- Builds and runs on macOS. The screenshots were saved by the debug snapshot of that build.
+- Builds and runs on macOS. The screenshots were saved by the debug snapshot of that build, over a staged desktop.
 
 **Not verified yet**
 
